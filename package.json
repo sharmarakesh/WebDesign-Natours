@@ -1,0 +1,22 @@
+{
+    "name": "webdesign-natours",
+    "version": "1.0.0",
+    "description": "Landing page for natours",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sharmarakesh/WebDesign-Natours.git"
+    },
+    "author": "Rakesh",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/sharmarakesh/WebDesign-Natours/issues"
+    },
+    "homepage": "https://github.com/sharmarakesh/WebDesign-Natours#readme",
+    "devDependencies": {
+        "node-sass": "^4.7.2"
+    }
+}
