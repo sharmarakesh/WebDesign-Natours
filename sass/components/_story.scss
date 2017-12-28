@@ -8,9 +8,6 @@
     padding-left: 9rem;
     font-size: $default-font-size;
     transform: skewX(-12deg);
-    &>* {
-        transform: skewX(12deg);
-    }
     &__shape {
         width: 15rem;
         height: 15rem;
@@ -22,11 +19,12 @@
         clip-path: circle(50% at 50% 50%);
         transform: translateX(-3rem) skewX(12deg);
         position: relative;
+        overflow: hidden;
     }
     &__img {
         height: 100%;
         transform: translateX(-4rem) scale(1.4);
-        backface-visibility: inherit;
+        backface-visibility: hidden;
         transition: all .5s;
     }
     &__text {

@@ -8,11 +8,30 @@
 }
 
 html {
+    font-size: 62.5%; //1rem = 10px; 10px/16px = 62.5%
+    // @include respond(phone) {
+    //     font-size: 50%;
+    // }
+    @include respond(tab-land) {
+        font-size: 56.25%; // 1rem == 9px; 9/16px = 56.25%;
+    } // width < 1200?
+    @include respond(tab-port) {
+        font-size: 50%; // 1rem == 8px; 8/16px = 50%;
+    } // width < 900?
+    // // @include respond(tab-port) {
+    // //     font-size: 30%; // 1rem == 4.8px; 4.8/16px = 30%;
+    // // } // width < 600?
+    @include respond(big-desktop) {
+        font-size: 75%; // 1rem == 12px; 12/16px = 75%;
+    } // width < 1800?
     // This defines what 1rem is
-    font-size: 62.5%;
 }
 
 body {
     box-sizing: border-box;
     /*Its changes the box model so that it dosen't add border and padding no longer added*/
+    padding: 3rem;
+    @include respond(tab-port) {
+        padding: 0;
+    }
 }
